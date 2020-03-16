@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utd-8">
+        <title> Home Page</title>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <input type="text" name="name">
+            <input type="submit" value="Greet">
+        </form>
+      
+        <% if (typeof name !== 'undefined') { %>  
+            <h1>
+            <%= name %>
+            </h1>
+        <% } else { %>  
+            <h1> Enter your name</h1> 
+            <% } %>
+    </body>
+</html>
